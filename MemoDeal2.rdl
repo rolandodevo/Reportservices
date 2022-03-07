@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>5ee7e173-d7bd-4473-b97d-fe07da86b515</rd:ReportID>
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <rd:SecurityType>DataBase</rd:SecurityType>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=65.99.225.208;Initial Catalog=scp_produccion</ConnectString>
+        <Prompt>Specify a user name and password for data source DataSource:</Prompt>
+      </ConnectionProperties>
+      <rd:DataSourceID>04f6fe0a-b614-4830-90d2-b21d02a8543c</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>select * from VW_Persona</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PersonaID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>PersonaID</DataField>
+        </Field>
+        <Field Name="Nombre">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Nombre</DataField>
+        </Field>
+        <Field Name="Proyecto">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Proyecto</DataField>
+        </Field>
+        <Field Name="TipoServicio">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TipoServicio</DataField>
+        </Field>
+        <Field Name="Nacionalidad">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Nacionalidad</DataField>
+        </Field>
+        <Field Name="RFC">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>RFC</DataField>
+        </Field>
+        <Field Name="RegimenFiscal">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>RegimenFiscal</DataField>
+        </Field>
+        <Field Name="Representante">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Representante</DataField>
+        </Field>
+        <Field Name="Telefono">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Telefono</DataField>
+        </Field>
+        <Field Name="Email">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Email</DataField>
+        </Field>
+        <Field Name="Calle">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Calle</DataField>
+        </Field>
+        <Field Name="NumExterior">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>NumExterior</DataField>
+        </Field>
+        <Field Name="NumInterior">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>NumInterior</DataField>
+        </Field>
+        <Field Name="CodigoPostal">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CodigoPostal</DataField>
+        </Field>
+        <Field Name="Estado">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Estado</DataField>
+        </Field>
+        <Field Name="Municipio">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Municipio</DataField>
+        </Field>
+        <Field Name="Colonia">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Colonia</DataField>
+        </Field>
+        <Field Name="PersonalidadFiscal">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>PersonalidadFiscal</DataField>
+        </Field>
+        <Field Name="VoBo">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>VoBo</DataField>
+        </Field>
+        <Field Name="Autoriza">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Autoriza</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>7.41667in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.8182in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="Rectangle2">
+                          <ReportItems>
+                            <Rectangle Name="Rectangle3">
+                              <ReportItems>
+                                <Textbox Name="Nombre">
+                                  <rd:DefaultName>Nombre</rd:DefaultName>
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Fields!Nombre.Value</Value>
+                                          <Style>
+                                            <FontSize>14pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                            <Color>White</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <Top>0.16667in</Top>
+                                  <Height>0.25in</Height>
+                                  <Width>5.54291in</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>0.02084in</Top>
+                              <Left>1.87375in</Left>
+                              <Height>0.625in</Height>
+                              <Width>5.54292in</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BackgroundColor>#366bc3</BackgroundColor>
+                              </Style>
+                            </Rectangle>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet</DataSetName>
+            <Height>0.8182in</Height>
+            <Width>7.41667in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>0.8182in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>7.41667in</Width>
+      <Page>
+        <LeftMargin>0.5in</LeftMargin>
+        <RightMargin>0.5in</RightMargin>
+        <TopMargin>0.5in</TopMargin>
+        <BottomMargin>0.5in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+</Report>
